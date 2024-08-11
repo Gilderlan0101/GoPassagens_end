@@ -1,0 +1,56 @@
+
+
+
+
+
+.conteine{
+    background-color: rgb(211, 201, 189);
+    height: 300px;
+    align-items: center;
+    margin-top: 10px;
+    margin: 10px;
+
+  
+}
+
+.perfil{
+    border: 1px solid rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    position: absolute;
+    
+}
+
+.perfil img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+   
+}
+
+#nome{
+   font-family: 'Times New Roman', Times, serif;
+    color: black;
+    position: absolute;
+    left: 10px;
+}
+.info_user p {
+    display: block; /* Mantém os elementos um abaixo do outro */
+    font-size: medium;
+    margin: 10px 0; /* Reduz a separação entre os títulos */
+    padding: 0; /* Remove qualquer padding adicional */
+    position: relative;
+    padding-top: 30px;
+    white-space: pre-wrap;
+}
+
+.info_user {
+    display: block; /* Permite que os elementos fiquem um abaixo do outro */
+    align-items: center;
+    justify-content: start;
+    width: 100px;
+    height: 10px; /* Ajusta a altura conforme o conteúdo */
+   
+}

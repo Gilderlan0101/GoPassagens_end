@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfil</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='perfil.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/uicons-perfil.css') }}"> <!-- Caminho correto -->
+</head>
+<body>
+    <div class="conteine">
+        <i class="fi fi-rr-settings"></i> <!-- Ícone a ser exibido -->
+        <div class="perfil">
+            <img src="{{ url_for('static', filename='img/bahia.jpeg') }}" alt="foto de perfil">
+            {% if user_name %}
+                <h1 id="nome">{{ user_name.title() }}</h1>
+
+                <div class="info_user">
+                    <p> {{ user_email }} </p> 
+                    <p> {{user_tel}} </p>
+                   
+                </div>
+           
+            {% endif %}
+        </div>
+    </div>
+   
+</body>
+</html>
